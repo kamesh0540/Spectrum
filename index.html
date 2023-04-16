@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- Designined by tenor -->
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Spectrum  </title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <!-- Move to up button -->
+  <div class="scroll-button">
+    <a href="#home"><i class="fas fa-arrow-up"></i></a>
+  </div>
+  <!-- navgaition menu -->
+  <nav>
+    <div class="navbar">
+      <div class="logo"><a href="#">Spectrum</a></div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Details</a></li>
+        <li><a href="#tests">Tests</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <div class="cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+      </ul>
+     
+    </div>
+    <div class="menu-btn">
+      <i class="fas fa-bars"></i>
+    </div>
+  </nav>
+
+  <!-- Home Section Start -->
+  <section class="home" id="home">
+    <div class="home-content">
+      <div class="text">
+        <div class="text-one">Find Help and Support for</div>
+        <div class="text-two">Your Mental Health Journey</div>
+        <div class="text-three">Early Detection, Better Mental Health</div>
+              <div class="graph-container">
+                
+                <canvas id="myChart"></canvas>
+              
+              <style>
+                .graph-container {
+                  height: 250px;
+                  width: 450px;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: rows;
+                  justify-content: center;
+                  border-radius: 5px;
+                  position: relative;
+                  top: 150px;
+                }
+                canvas {
+                  width: 100%;
+                  height: 100%;
+                  border: none;
+                }
+              </style>
+              <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+            /<script src="script4.js"></script>
+            
+          </div>
+        </div>
+        <div class="button">
+          <a href="#details"><button>Test Now</button></a>
+        </div>
+      
+    </div>
+  </section>
+
+  <!-- About Section Start -->
+  <section class="about" id="about">
+    <div class="content">
+      <div class="title"><span>About Spectrum</span></div>
+      <div class="about-details">
+        <div class="left">
+          <img src="https://media.istockphoto.com/id/900653978/vector/emotional-intelligence-feeling-and-emotions-concept-vector-illustration.jpg?s=1024x1024&w=is&k=20&c=PhQfszW2mLDj0U4LWXOvfalkvtvsk33rYFXJd5PP_68=" alt=""> 
+        </div>
+        <div class="right">
+          <div class="topic">Spectrum has a Vision for Mental Wellness</div>
+          <p>
+            At Spectrum, our mission is to create a better world for children by spreading awareness about mental health and providing early screening for common disorders. Our website offers a reliable tool for parents and caregivers to screen children aged 6-18 for mental health concerns. It's important to note that our screening tool is not a diagnosis, but it can provide valuable information to help children get the support they need. Join us in creating a brighter future for children's mental health.
+          </p>
+     
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- My Skill Section Start -->
+  <!-- Section Tag and Other Div will same where we need to put same CSS -->
+  <section class="skills" id="skills">
+    <div class="content">
+      <div class="title"><span>Enter Details</span></div>
+
+
+      <div class="container" id="details">
+        <div class="content">
+
+          <form id="form" action="#tests">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Child's Full Name</span>
+                <input id="name" type="text" placeholder="Enter your name" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Child's Age</span>
+                <input id="chage" type="text" placeholder="Enter current age" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Parent/Gaurdian Email</span>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Parent/Guardian Phone Number</span>
+                <input type="text" placeholder="Enter your number" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Child's Birth Date</span>
+                <input type="date" id="bdate" placeholder required>
+                
+              </div>
+              <div class="input-box">
+                <span class="details">Today's Date</span>
+                <input type="date" id="tdate" placeholder required>
+              </div>
+              <div class="input-box">
+                <span class="details">Child's Grade in School</span>
+                <input type="text" placeholder="Enter grade" required >
+              </div>
+            </div>
+
+            <div class="gender-details">
+              <input type="radio" name="gender" id="dot-1" value="Male">
+              <input type="radio" name="gender" id="dot-2" value="Female">
+              <input type="radio" name="gender" id="dot-3" value="Prefer Not to Say">
+              <span class="gender-title">Child's Gender</span>
+              <div class="category">
+                <label for="dot-1">
+                  <span class="dot one"></span>
+                  <span class="gender">Male</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="gender">Female</span>
+                </label>
+                <label for="dot-3">
+                  <span class="dot three"></span>
+                  <span class="gender">Prefer not to say</span>
+                </label>
+              </div>
+            </div>
+            <div class="button">
+              <input id="sub" type="submit" value="Submit" name="sub" clicked> 
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!--Questionaire Section Start -->
+  <section class="tests" id="tests">
+    <div class="content">
+      <div class="title">
+        <span>Tests</span>
+      </div>
+        <div class="left">
+        <p> The test is a tool to assess a child's behavior and emotions. Parents or caregivers will be asked to fill out 113 questions about their child's behavior over the past 6 months. The CBCL can help identify areas of concern and guide appropriate interventions and treatment planning.</p>
+        </div>
+        <div class="right">
+          <a href="#form"> <button id="testbut" class="custom-btn btn-1"  onclick="location.href='question.html'"><span>Test for Parent</span></button></a>
+        </div>
+    </div>
+  </section>
+
+  <!-- Contact Me section Start -->
+  <section class="contact" id="contact">
+    <div class="content">
+      <div class="title"><span>Contact us</span></div>
+      <div class="text">
+        <div class="topic">Have Any Feedback?</div>
+        <p>If you have any feedback, contact us</p>
+        <a href="mailto:tensortechteam@gmail.com">
+          <div class="button">
+            <button>Mail</button>
+          </div>
+        </a>
+        </div>
+    </div>
+  </section>
+  <script>
+    const button1=document.getElementById("testbut");
+    button1.disabled=true;
+
+    const ele=document.getElementById("sub");
+
+    const disableButton = () => {
+      button1.disabled = false;
+    };
+
+    ele.addEventListener("click", disableButton);
+  </script>
+  <!-- Footer Section Start -->
+  <footer>
+    <div class="text">
+      <span>Created By Tensor</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="script3.js"></script>
+  
+</body>
+
+</html>
