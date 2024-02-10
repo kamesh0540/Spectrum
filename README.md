@@ -8,3 +8,7 @@ Landing Page
 
 
 ![image](https://github.com/kamesh0540/Spectrum/assets/96972212/862635cc-e953-431a-98cc-88fbcad27056)
+
+Report 
+
+![image](https://github.com/kamesh0540/Spectrum/assets/96972212/24e79b0e-bc74-45e8-98f2-cf68ef1b233c)
